@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/schedulePage"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/schedView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TimePicker
+            android:id="@+id/timePickStart"
+            android:layout_width="273dp"
+            android:layout_height="337dp"></TimePicker>
+
+        <TimePicker
+            android:id="@+id/timePickEnd"
+            android:layout_width="273dp"
+            android:layout_height="337dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="18dp"></TimePicker>
+
+        <TextView
+            android:id="@+id/timeText1"
+            android:layout_width="35dp"
+            android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="23dp"
+            android:text="Pick start time"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/timeText2"
+            android:layout_width="35dp"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/timeText1"
+            android:layout_marginBottom="278dp"
+            android:text="Pick end time"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/boxes"
+            android:layout_alignParentEnd="true"
+            android:text="Select days available:"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/boxes"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="44dp">
+
+            <CheckBox
+                android:id="@+id/sDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Sunday"
+                android:textSize="20sp"
+                android:onClick="boxClick"/>
+
+            <CheckBox
+                android:id="@+id/mDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sDay"
+                android:layout_marginBottom="20dp"
+                android:text="Monday"
+                android:textSize="20sp"
+                android:onClick="boxClick"/>
+
+            <CheckBox
+                android:id="@+id/tDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mDay"
+                android:layout_marginBottom="20dp"
+                android:text="Tuesday"
+                android:textSize="20sp"
+                android:onClick="boxClick"/>
+
+            <CheckBox
+                android:id="@+id/wDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tDay"
+                android:layout_marginBottom="20dp"
+                android:text="Wednesday"
+                android:textSize="20sp"
+                android:onClick="boxClick"/>
+
+            <CheckBox
+                android:id="@+id/thDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wDay"
+                android:layout_marginBottom="20dp"
+                android:text="Thursday"
+                android:textSize="20sp"
+                android:onClick="boxClick"/>
+
+            <CheckBox
+                android:id="@+id/fDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thDay"
+                android:layout_marginBottom="20dp"
+                android:text="Friday"
+                android:textSize="20sp"
+                android:onClick="boxClick"/>
+
+            <CheckBox
+                android:id="@+id/saDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fDay"
+                android:text="Saturday"
+                android:textSize="20sp"
+                android:onClick="boxClick"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/schedBtn"
+            android:layout_width="139dp"
+            android:layout_height="265dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:text="Update Schedule"/>
+
+    </RelativeLayout>
+</FrameLayout>

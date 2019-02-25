@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/timeEnd"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/timeStart"
+        android:layout_marginEnd="49dp"
+        android:ems="10"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/timeStart"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="90dp"
+        android:ems="10"
+        android:inputType="time" />
+
+    <TextView
+        android:id="@+id/timeText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/timeText2"
+        android:layout_marginStart="65dp"
+        android:text="Enter start time" />
+
+    <TextView
+        android:id="@+id/timeText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="65dp"
+        android:layout_marginTop="55dp"
+        android:text="Enter end time" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="186dp">
+
+        <CheckBox
+            android:id="@+id/sDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunday"
+            android:textSize="25sp"/>
+
+        <CheckBox
+            android:id="@+id/mDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sDay"
+            android:text="Monday"
+            android:textSize="25sp"/>
+
+        <CheckBox
+            android:id="@+id/tDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mDay"
+            android:text="Tuesday"
+            android:textSize="25sp"/>
+
+        <CheckBox
+            android:id="@+id/wDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tDay"
+            android:text="Wednesday"
+            android:textSize="25sp"/>
+
+        <CheckBox
+            android:id="@+id/thDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wDay"
+            android:text="Thursday"
+            android:textSize="25sp"/>
+
+        <CheckBox
+            android:id="@+id/fDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/thDay"
+            android:text="Friday"
+            android:textSize="25sp"/>
+
+        <CheckBox
+            android:id="@+id/saDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fDay"
+            android:text="Saturday"
+            android:textSize="25sp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/schedBtn"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="163dp"
+        android:text="Update Schedule" />
+
+    </RelativeLayout>
+
+</FrameLayout>
